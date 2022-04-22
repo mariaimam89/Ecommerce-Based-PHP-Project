@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+/* css reset */
+*{
+    padding:0px;
+    margin:0px;
+
+}
+body{
+    font-family: poppins;
+    letter-spacing: 1px;
+}
+a:active {
+  
+    color: #f44336 !important;
+}
+/* status msgs */
+div#successmsg {
+    display: block;
+    text-align: center;
+    color: green;
+    font-weight: bolder;
+}
+/* styling for fixed side navbar */
+.sidenav
+{
+	background: #352828;
+    display: inline-block;
+	/* position: fixed; */
+    position: absolute;
+	height: 100%;
+    width: 20%;
+
+	top: 80px;
+	left: 20px;
+	z-index: 1;
+	overflow: hidden;
+    
+}
+.sidenav a
+{
+	color: rgb(255, 255, 255);
+	padding: 10px 15px 10px 16px;
+	text-decoration: none;
+	font-size: 16px;
+	display: block;
+    border-bottom:  1px solid white;
+}
+.sidenav a:hover
+{
+	background: #E74F3B;
+    opacity: 0.7;
+}
+.sidenav a:active
+{
+	color: #E74F3B!important;
+  
+}
+.sidenav h2
+{
+	padding: 10px 15px 10px 16px;
+	color: rgb(255, 255, 255);
+	border-bottom-style: 1px solid;
+    background-color: #E74F3B;
+    font-size: 18px;
+    
+}
+/* //products area */
+.main-body{
+    width: 100%;
+    margin: auto;
+    height:850px;
+}
+/* Product card */
+div#fetch_products{
+    display: grid !important;
+    width: 75%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    position: absolute;
+    left:250px;
+    top:130px;
+    padding-left: 50px;
+    
+
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: arial;
+    font-size: 14px;
+  }
+  img#product_img {
+    width: 250px;
+    height: 250px;
+}
+  
+  .price {
+    color: #E74F3B;
+    font-size: 20px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #352828;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+/* status msg style */
+div#statusmsg {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+}
+/* styling for pagination */
+div#pagination{
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  #pagination li{
+    display: inline-block;
+
+    list-style-type: none;
+    color: black;
+    flex-direction: row;
+  
+  
+    text-decoration: none;
+  }
+  #pagination li a{
+
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #160a08;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  #pagination a.active {
+    background-color: #a1382a;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  #pagination a:hover:not(.active) {background-color: rgb(172, 68, 68);}
+
+/* product title anchor css */
+h3.pname a{
+    text-decoration: none;
+    color:#352828;
+}
+h3.pname a:hover{
+    text-decoration: none;
+    color:red;
+}
+/* Responsiveness for tablet */
+
+@media only screen and (min-width: 768px) and (max-width:1024px){
+ /* navigation */
+    #logo a{
+        font-size: 14px;
+    }
+    #navbar ul li a{
+        font-size: 12px;
+    }
+    .sidenav{
+        height:35%;
+    }
+    .sidenav a{
+        font-size: 12px;
+    }
+    .sidenav h2{
+        font-size: 12px;
+    }
+    .main-body{
+        height:420px;
+    }
+footer{
+    height: 30px;
+    font-size:12px;
+}
+}
+

@@ -1,0 +1,13 @@
+.container{
+    width:100%;
+    height:950px;
+    display: flex;
+}
+.productimg{
+    width:50%;
+    height: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}

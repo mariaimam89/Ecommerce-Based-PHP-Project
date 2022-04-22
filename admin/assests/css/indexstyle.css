@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+/* css reset */
+*{
+    padding:0px;
+    margin:0px;
+
+}
+body{
+    font-family: poppins;
+    letter-spacing: 1px;
+}
+/* status msgs */
+div#successmsg {
+    display: block;
+    text-align: center;
+    color: green;
+    font-weight: bolder;
+}
+/* styling for fixed side navbar */
+.sidenav
+{
+	background: #352828;
+    display: inline-block;
+	/* position: fixed; */
+    position: absolute;
+	height: 95%;
+    width: 20%;
+
+	top: 80px;
+	left: 20px;
+	z-index: 1;
+	overflow: hidden;
+    
+}
+.sidenav a
+{
+	color: rgb(255, 255, 255);
+	padding: 10px 15px 10px 16px;
+	text-decoration: none;
+	font-size: 16px;
+	display: block;
+    border-bottom:  1px solid white;
+}
+.sidenav a:hover
+{
+	background: #E74F3B;
+    opacity: 0.7;
+}
+ a:active
+{
+	
+    opacity: 0.7;
+    background-color: #E74F3B;
+}
+.sidenav h2
+{
+	padding: 10px 15px 10px 16px;
+	color: rgb(255, 255, 255);
+	border-bottom-style: 1px solid;
+    background-color: #E74F3B;
+    font-size: 18px;
+    
+}
+/* table styling  */
+table{
+    text-align: center;
+}
+.table td {
+    border-bottom: #c4c4c4 1px solid;
+    padding: 10px;
+      text-align: center;
+    }
+/* //products area */
+.main-body{
+    width: 100%;
+    margin: auto;
+    height:850px;
+}
+/* Product card */
+div#fetch_products{
+    display: grid !important;
+    width: 75%;
+    margin: auto;
+    grid-template-columns: 1fr !important;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    position: absolute;
+    left:250px;
+    top:130px;
+    padding-left: 50px;
+    color: black;
+    
+
+}
+/* Products button styling */
+a#update-btn {
+    padding: 8px 15px;
+    color: white;
+    background: #059862;
+    border: none;
+    text-decoration: none;
+font-size:14px;
+}
+a#remove-btn {
+    padding: 8px 15px;
+    color: white;
+    background: #E74F3B;
+    border: none;
+text-decoration: none;
+font-size:14px;
+}
+a#insert-btn {
+    padding: 8px 15px;
+    color: white;
+    background: #059862;
+    border: none;
+    text-decoration: none;
+font-size:14px;
+}
+a:active {
+  
+    color: #f44336 !important;
+}
+.addproduct {
+    margin: 0px 20px 20px;
+}
+
+
+/* status msg style */
+div#statusmsg {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+/* Responsiveness for tablet */
+
+@media only screen and (min-width: 768px) and (max-width:1024px){
+ /* navigation */
+    #logo a{
+        font-size: 14px;
+    }
+    #navbar ul li a{
+        font-size: 12px;
+    }
+    .sidenav{
+        height:35%;
+    }
+    .sidenav a{
+        font-size: 12px;
+    }
+    .sidenav h2{
+        font-size: 12px;
+    }
+    .main-body{
+        height:420px;
+    }
+footer{
+    height: 30px;
+    font-size:12px;
+}
+}
+
